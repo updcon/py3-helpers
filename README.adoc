@@ -1,0 +1,12 @@
+= py3-helpers
+
+Tiny modules for Python3 tasks @ DKD
+
+== List
+
+* b58
+* mm3
+
+== License
+
+MIT LICENSE WITHOUT WARRANTY OF ANY KIND
