@@ -12,7 +12,8 @@ class InvalidBase58Error(Exception):
 
 
 def i2b(n: int) -> bytes:
-    return n.to_bytes((n.bit_length() + 7) // 8, byteorder='big', signed=True)
+    # return n.to_bytes((n.bit_length() + 7) // 8, byteorder='big', signed=True)
+    return n.to_bytes(4, byteorder='big', signed=True)
 
 def b2i(b: bytes) -> int:
     return int.from_bytes(b, byteorder='big', signed=True)
