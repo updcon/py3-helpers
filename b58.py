@@ -10,7 +10,7 @@ B58_BASE = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
 class InvalidBase58Error(Exception):
     pass
 
-
+# N of [0,2147483647]
 def i2b(n: int) -> bytes:
     # return n.to_bytes((n.bit_length() + 7) // 8, byteorder='big', signed=True)
     return n.to_bytes(4, byteorder='big', signed=True)
